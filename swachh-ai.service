@@ -1,0 +1,16 @@
+[Unit]
+Description=SWACHH-AI edge litter deterrence
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/swachh-ai
+EnvironmentFile=-/home/pi/swachh-ai/.env
+ExecStart=/home/pi/swachh-ai/.venv/bin/python -m swachh_ai.main --config config/config.yaml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
