@@ -1,0 +1,15 @@
+# Ultralytics dataset definition. Edit `names` to match YOUR annotated classes.
+# Expected layout (YOLO format):
+#   datasets/swachh_garbage/{images,labels}/{train,val,test}
+path: datasets/swachh_garbage
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: plastic_bottle
+  1: plastic_bag
+  2: metal_can
+  3: paper
+  4: food_wrapper
+  5: disposable_cup
