@@ -1,0 +1,13 @@
+# --- edge runtime -----------------------------------------------------------
+ultralytics>=8.3        # YOLOv8 (pulls in torch + opencv-python)
+numpy>=1.24
+PyYAML>=6.0
+python-dotenv>=1.0
+paho-mqtt>=2.0          # MQTT IoT notifications
+requests>=2.31          # Telegram / webhook
+gpiozero>=2.0           # Raspberry Pi GPIO (falls back to mock elsewhere)
+# pi-ina219>=1.4        # optional: battery / solar monitoring via INA219
+# Raspberry Pi: also `sudo apt install python3-lgpio python3-picamera2` (see scripts/install_pi.sh)
+
+# --- optional dashboard -----------------------------------------------------
+Flask>=3.0
