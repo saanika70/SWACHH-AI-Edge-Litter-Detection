@@ -1,3 +1,3 @@
-"""SWACHH-AI: an edge-computing system for real-time litter deterrence."""
+from .notifier import Notifier
 
-__version__ = "1.0.0"
+__all__ = ["Notifier"]
